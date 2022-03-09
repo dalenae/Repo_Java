@@ -16,6 +16,28 @@ public class Homework2 {
         float mortgageRate = 2.49f;
         System.out.println("Mortgage Rate -> " + mortgageRate);
 
+        short bankBalance = 3000;
+        System.out.println("Bank balance -> " + bankBalance);
+
+        boolean doesSunRiseFromWest = false;
+        System.out.println(" Does the sun rise from the west? -> " + doesSunRiseFromWest);
+
+        char myInitial = 'd';
+        System.out.println(" My initial -> " + myInitial);
+
+        String myName = "Dalena Eyasu";
+        System.out.println(" My name -> " +myName);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
