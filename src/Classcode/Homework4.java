@@ -32,7 +32,7 @@ public class Homework4 {
         System.out.println(lowerCaseValueToCheck2);
         System.out.println(task3.indexOf(lowerCaseValueToCheck2));      //result is 2
 
-        
+
 
 
     }
