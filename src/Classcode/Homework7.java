@@ -12,6 +12,60 @@ public class Homework7 {
 
         }
 
+    // Create a method that will change the given sentence in Titlecase
+    public static String toTitleCase(String input){
+        String[] wordArray = input.split(" ");
+        String result = "";
+        int i=0;
+        while (i<wordArray.length){
+            result += wordArray[i].substring(0,1).toUpperCase()+wordArray[i].substring(1).toLowerCase()+" ";
+            i++;
+        }
+        result = result.trim();
+        return result;
+    }
+
+    //Create method to find the maximum value from given int-array
+    public static int maxArrayValue(int[] input) {
+        int maxValue = input[0];
+    int i = 0;
+        while (i < input.length){
+        if (input[i] > maxValue) {
+            maxValue = input[i];
+        }
+        i++;
+
+    } return maxValue; }
+
+    //Create a method to find if the given string is palindrome (DO NOT ignore case)
+        public static boolean isPalindrome(String strInput1) {
+            String reverse = "";
+            boolean isPalindrome = false;
+            for (int i = strInput1.length() - 1; i >= 0; i--) {
+                reverse += strInput1.charAt(i);
+            }
+            if (strInput1.equalsIgnoreCase(reverse)) {
+                System.out.println("String is Palindrome");
+                isPalindrome = true;
+            } else {
+                System.out.println("String is not Palindrome");
+            }
+            return isPalindrome; }
+
+
+    //Create a method to find the longest String in the given String-array
+     public static String longestString(String[] input) {
+         String longestValue = input[0];
+         int i = 0;
+         do {
+             if (input[i].length() > longestValue.length()) {
+                 longestValue = input[i];
+             }
+             i++;
+         } while (i < input.length);
+         return longestValue;
+     }
+
     public static void main(String[] args) {
         System.out.println(makeAbbreviation("make America great again"));
         System.out.println(makeAbbreviation("outfit of the day"));
@@ -19,34 +73,7 @@ public class Homework7 {
         System.out.println(makeAbbreviation("Good morning"));
         System.out.println(makeAbbreviation("Happy new Year"));
         System.out.println(makeAbbreviation("Happy birthday to you dear"));
-    }
-
-    // Create a method that will change the given sentence in Titlecase
-    public static String makeTitleCase(String inputStr) {
-        String inputStrL = inputStr.toLowerCase();
-        String makeTitleCase = "";
-        makeTitleCase = inputStrL.substring(0,1).toUpperCase();
-        return makeTitleCase; }
-
-   public static int findMaxInArray(int[] inputArray) {
-     int maxNum = inputArray[0];
-      if (inputArray[1] > maxNum)
-        maxNum = inputArray[1];
-    if (inputArray[2] > maxNum)
-      maxNum = inputArray[2];
 
 
 
-    //Create a method to find if the given string is palindrome (DO NOT ignore case)
-    public static boolean isPalindrome(String strInput1) {
-        String reverse = "";
-        for (int i = strInput1.length() - 1; i >= 0; i--) {
-            reverse += strInput1.charAt(i);
-            if (strInput1.equals(reverse)) {
-                System.out.println("String is Palindrome");
-            } else {
-                System.out.println("String is not Palindrome");
-                return isPalindrome("");
-
-            } }
-        }
+    } }
