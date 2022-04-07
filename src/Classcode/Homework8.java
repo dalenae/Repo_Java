@@ -1,22 +1,23 @@
 package Classcode;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Homework8 {
-    public static String generateTimeline(int input) {
-        Date currDate = new Date();
+    public static void generateTimeline(int input) {
+
         SimpleDateFormat dateFormat = new SimpleDateFormat("ha");
-        String dateValue = dateFormat.format(currDate);
-        String generateTimeline = "";
+        Calendar cal = Calendar.getInstance();
+        System.out.println("Now");
 
-        for (int i= 0 ; i <= input ; i += 2) {
+        for (int i= 0 ; i < input ; i++) {
+            cal.add(Calendar.HOUR,2);
+            Date dateCal = cal.getTime();
+            System.out.println(dateFormat.format(dateCal).toLowerCase());
         }
-        return generateTimeline;
 
-    }
+        System.out.println(generateTimeline(5););
 
-    public static void main(String[] args) {
-        System.out.println(generateTimeline(5));
     }
 }
