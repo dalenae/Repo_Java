@@ -17,7 +17,7 @@ public class Homework8 {
             System.out.println(dateFormat.format(dateCal).toLowerCase());
         }
 
-        System.out.println(generateTimeline(5););
+      //  System.out.println(generateTimeline(5););
 
     }
 }

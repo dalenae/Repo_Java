@@ -56,6 +56,7 @@ public class CodeTest {
             }
         }
         System.out.println(printCommonString);
+
     }
     public static void main(String[] args) {
         //int[] arrayOne = {32, 54, 12, 67, 2, 5};
@@ -72,7 +73,6 @@ public class CodeTest {
         String[] arr1 = {"happY", "king", "peace", "living standard"};
         String[] arr2 = {"king kong", "Happy", "PEACE"};
        printCommonString(arr1,arr2);
-
     }
 
 
